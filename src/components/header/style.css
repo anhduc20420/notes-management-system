@@ -1,0 +1,116 @@
+/* Header Container */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Logo */
+.logo {
+    flex: 1; 
+    display: flex;
+    justify-content: flex-start; 
+}
+
+.logo img {
+    height: 70px;
+}
+
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    flex: 2; 
+    justify-content: center; 
+}
+
+.nav-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; 
+}
+
+.nav-bar ul li {
+    margin: 0;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #007bff; 
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-bar ul li a:hover {
+    color: #0056b3; 
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin: 0 20px; 
+}
+
+.search-bar input[type="text"] {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center; 
+}
+
+.auth-buttons button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-buttons button:hover {
+    background-color: #0056b3;
+}
+
+/* Menu Button */
+.menu-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.menu-button:hover {
+    color: #0056b3;
+}
