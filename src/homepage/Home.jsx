@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import Header from '../components/header/Header';
+// import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
 import NotesList from '../components/NoteCard/NoteList';
 import './style.css'; 
+import NewHeader from '../components/NewHeader/NewHeader';
 
 function Home() {
   const [notes, setNotes] = useState([
@@ -30,12 +31,11 @@ function Home() {
 
   return (
     <div className="home-container">
-      <Header />
+      <NewHeader />
       <button
         className="add-button"
         onClick={() => handleAddNote('Ghi chú mới', 'Nội dung mới', new Date().toLocaleDateString())}
       >
-        Thêm ghi chú mới
       </button>
       <NotesList notes={notes} onDelete={handleDelete} onEdit={handleEdit} />
       <Footer />
